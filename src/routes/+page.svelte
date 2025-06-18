@@ -10,6 +10,7 @@
 	import About from '$lib/About.svelte';
 	import Contact from '$lib/Contact.svelte';
 </script>
+
 <title>Descon</title>
 <div class="w-full h-full bg-primary-900">
 	<Navbar />

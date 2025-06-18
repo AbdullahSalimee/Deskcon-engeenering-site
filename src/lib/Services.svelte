@@ -86,39 +86,39 @@ onMount(() => {
 	/**
 	 * @type {number | null}
 	 */
-     let expandedService = null;
+	let expandedService = null;
 
-const services = [
-    {
-        title: 'Mechanical Equipment Design',
-        description:
-            'Precise and cost effective engineering solutions for mechanical equipment design.',
-        details:
-            'We specialize in pressure vessels, heat exchangers, and storage tanks following ASME and API standards.',
-        icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4'
-    },
-    {
-        title: 'Civil/Structural Design',
-        description: 'Innovative design for buildings and industrial infrastructure.',
-        details:
-            'Our structural solutions include seismic analysis and foundation design using latest industry codes.',
-        icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4'
-    },
-    {
-        title: 'Electrical & Instrumentation',
-        description: 'Comprehensive design for electrical systems.',
-        details:
-            'We design power distribution, lighting, and control systems compliant with IEC and NEC standards.',
-        icon: 'M13 10V3L4 14h7v7l9-11h-7z'
-    }
-];
+	const services = [
+		{
+			title: 'Mechanical Equipment Design',
+			description:
+				'Precise and cost effective engineering solutions for mechanical equipment design.',
+			details:
+				'We specialize in pressure vessels, heat exchangers, and storage tanks following ASME and API standards.',
+			icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4'
+		},
+		{
+			title: 'Civil/Structural Design',
+			description: 'Innovative design for buildings and industrial infrastructure.',
+			details:
+				'Our structural solutions include seismic analysis and foundation design using latest industry codes.',
+			icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4'
+		},
+		{
+			title: 'Electrical & Instrumentation',
+			description: 'Comprehensive design for electrical systems.',
+			details:
+				'We design power distribution, lighting, and control systems compliant with IEC and NEC standards.',
+			icon: 'M13 10V3L4 14h7v7l9-11h-7z'
+		}
+	];
 
-/**
- * @param {number | null} index
- */
-function toggleService(index) {
-    expandedService = expandedService === index ? null : index;
-}
+	/**
+	 * @param {number | null} index
+	 */
+	function toggleService(index) {
+		expandedService = expandedService === index ? null : index;
+	}
 </script>
 <section id="services" class="bg-primary-700 py-16 px-4">
     <div class="max-w-4xl mx-auto">
