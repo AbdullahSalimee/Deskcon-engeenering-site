@@ -35,7 +35,7 @@ const autoSlide = setInterval(() => {
 
 </script>
 
-<div class="relative w-full overflow-hidden h-[300px] sm:h-[650px]">
+<div class="relative w-full overflow-hidden h-[300px] sm:h-[600px]">
 	
     <img
         src={images[currentIndex]}

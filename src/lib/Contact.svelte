@@ -11,7 +11,7 @@
 	};
   </script>
   
-  <section id="contact" class="relative py-28 px-4 bg-primary-900 overflow-hidden">
+  <section id="contact" class="relative py-28 px-4 overflow-hidden">
 	<div class="mx-auto relative z-10 max-w-6xl">
 	  <!-- Section header -->
 	  <div class="relative mb-20 pl-6 md:pl-12">
