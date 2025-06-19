@@ -1,82 +1,7 @@
 <script>
-	import { onMount } from 'svelte';
-let active = '';
+	import { onMount } from "svelte";
 
-
-
-onMount(() => {
-const sectionIds = ['top', 'team', 'projects', 'services', 'contact', 'about', 'vision'];
-const visibleSections = new Map();
-
-// Track if we're at the bottom of the page
-let isAtBottom = false;
-
-function checkVisibleSections() {
-// If we're at the bottom, force highlight contact
-if (isAtBottom) {
-  active = 'contact';
-  return;
-}
-
-// Otherwise find the first visible section
-for (const id of sectionIds) {
-  if (visibleSections.get(id)) {
-    active = id === 'top' ? '' : id;
-    break;
-  }
-}
-}
-
-function handleScroll() {
-const scrollTop = window.scrollY;
-const scrollBottom = scrollTop + window.innerHeight;
-const pageHeight = document.documentElement.scrollHeight;
-
-// Check if we're at the bottom (with 5px threshold)
-isAtBottom = Math.abs(scrollBottom - pageHeight) < 5;
-
-// Check if we're at the top
-if (scrollTop < 50) {
-  active = '';
-  return;
-}
-
-checkVisibleSections();
-}
-
-// Set up scroll event listener
-window.addEventListener('scroll', handleScroll, { passive: true });
-
-// Set up IntersectionObserver
-const observer = new IntersectionObserver(
-(entries) => {
-  entries.forEach((entry) => {
-    visibleSections.set(entry.target.id, entry.isIntersecting);
-  });
-  handleScroll(); // Re-check after visibility changes
-},
-{ 
-  threshold: 0.5,
-  rootMargin: '-30px 0px 0px 0px' // Adjust for fixed header
-}
-);
-
-// Observe all sections
-sectionIds.forEach((id) => {
-const el = document.getElementById(id);
-if (el) observer.observe(el);
-});
-
-// Initial check
-handleScroll();
-
-return () => {
-window.removeEventListener('scroll', handleScroll);
-observer.disconnect();
-// @ts-ignore
-clearInterval(autoSlide); // Clean up the slideshow interval
-};
-});
+	
 let currentTeamIndex = 0;
 
 	const teamMembers = [
@@ -124,11 +49,11 @@ let currentTeamIndex = 0;
 </script>
 
 
-<section id="team" class="bg-primary-900 py-8 px-4 md:px-16 relative">
-    <div class="w-1/2 mx-auto">
+<section id="team" class="bg-primary-900 py-16 md:py-24 px-4 md:px-16 relative">
+    <div class="md:w-1/2 lg:1/3 mx-auto">
         <h2 class="text-4xl font-bold my-12 text-primary-300 text-center">Our Team</h2>
 
-        <div class="relative overflow-hidden">
+        <div class="relative overflow-hidden p-6">
             <!-- Team Carousel -->
             <div
                 class="flex transition-transform duration-300"

@@ -1,80 +1,5 @@
 <script>
 
-import { onMount } from 'svelte';
-let active = '';
-onMount(() => {
-  const sectionIds = ['top', 'team', 'projects', 'services', 'contact', 'about', 'vision'];
-  const visibleSections = new Map();
-
-  // Track if we're at the bottom of the page
-  let isAtBottom = false;
-
-  function checkVisibleSections() {
-    // If we're at the bottom, force highlight contact
-    if (isAtBottom) {
-      active = 'contact';
-      return;
-    }
-
-    // Otherwise find the first visible section
-    for (const id of sectionIds) {
-      if (visibleSections.get(id)) {
-        active = id === 'top' ? '' : id;
-        break;
-      }
-    }
-  }
-
-  function handleScroll() {
-    const scrollTop = window.scrollY;
-    const scrollBottom = scrollTop + window.innerHeight;
-    const pageHeight = document.documentElement.scrollHeight;
-    
-    // Check if we're at the bottom (with 5px threshold)
-    isAtBottom = Math.abs(scrollBottom - pageHeight) < 5;
-
-    // Check if we're at the top
-    if (scrollTop < 50) {
-      active = '';
-      return;
-    }
-
-    checkVisibleSections();
-  }
-
-  // Set up scroll event listener
-  window.addEventListener('scroll', handleScroll, { passive: true });
-
-  // Set up IntersectionObserver
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        visibleSections.set(entry.target.id, entry.isIntersecting);
-      });
-      handleScroll(); // Re-check after visibility changes
-    },
-    { 
-      threshold: 0.5,
-      rootMargin: '-30px 0px 0px 0px' // Adjust for fixed header
-    }
-  );
-
-  // Observe all sections
-  sectionIds.forEach((id) => {
-    const el = document.getElementById(id);
-    if (el) observer.observe(el);
-  });
-
-  // Initial check
-  handleScroll();
-
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-    observer.disconnect();
-    // @ts-ignore
-    clearInterval(autoSlide); // Clean up the slideshow interval
-  };
-});
 	
 </script>
 
@@ -91,7 +16,7 @@ onMount(() => {
         ></div>
     </div>
 
-    <div class="max-w-7xl mx-auto relative z-10">
+    <div  class="max-w-7xl mx-auto relative z-10">
         <!-- Section header with diagonal accent -->
         <div class="relative mb-20 pl-6 md:pl-12">
             <div
