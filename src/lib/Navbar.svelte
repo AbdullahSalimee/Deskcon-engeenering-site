@@ -120,7 +120,7 @@ onMount(() => {
 
 
 <!-- svelte-ignore a11y_consider_explicit_label -->
-<nav class="grid grid-cols-2 md:flex w-full p-2 h-fit md:h-20 bg-primary-900  sticky top-0 z-50 items-center">
+<nav class="grid grid-cols-2 md:flex w-full p-2 h-fit md:h-20 bg-gradient-to-r from-primary-900 via-primary-900 to-primary-300  sticky top-0 z-50 items-center">
     <!-- svelte-ignore a11y_invalid_attribute -->
     <a
         href="/"
@@ -157,7 +157,7 @@ on:click={() => (open = 'open')}
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <!-- svelte-ignore a11y_missing_attribute -->
 <a 
-class={`${open ? 'visible' : 'hidden'} md:hidden text-primary-300 ml-auto w-fit h-fit p-2`}
+class={`${open ? 'visible' : 'hidden'} md:hidden text-primary-500 ml-auto w-fit h-fit p-2`}
 
 on:click={() => (open = '')}
 >
@@ -287,9 +287,9 @@ on:click={() => (open = '')}
         <a
             href="#contact"
             on:click={() => (active = 'contact')}
-            class=" ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-300 py-2 md:py-0  rounded-2xl md:rounded-none hover:px-6 h-full border-primary-300 md:border-l-2 border-r-2 duration-300 ease-in-out"
+            class=" ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-900 py-2 md:py-0  rounded-2xl md:rounded-none hover:px-6 h-full border-primary-900 md:border-l-2 border-r-2 duration-300 ease-in-out"
             class:border-b-2={open === 'open'}
-            class:bg-primary-300={active === 'contact'}
+            class:bg-primary-900={active === 'contact'}
             class:px-6={active === 'contact'}
          
         >

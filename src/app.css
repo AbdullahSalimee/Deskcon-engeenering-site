@@ -13,16 +13,17 @@
 @theme {
     /* === COLORS === */
     
-    --color-primary-900: #02010A;
+    /* --color-primary-900: #02010A;
     --color-primary-700: #28536B;
     --color-primary-500: #F5F5F5;
     --color-primary-300: #1D84B5;
-   
-    /* --color-primary-900: #0D1321;
+    --color-primary-100: #1D2D44; */
+
+    --color-primary-900: #0D1321;
     --color-primary-700: #1D2D44;
     --color-primary-500: #dee2e6;
     --color-primary-300: #3E92CC;
-    */
+   
 
 
     /* === FONTS === */
