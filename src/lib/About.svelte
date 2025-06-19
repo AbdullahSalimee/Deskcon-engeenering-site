@@ -29,7 +29,7 @@
         </div>
 
         <!-- Content grid -->
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
             <!-- Left column - Image with overlay text -->
             <div class="relative group">
                 <div

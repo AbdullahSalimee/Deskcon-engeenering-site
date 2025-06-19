@@ -131,7 +131,7 @@ onMount(() => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
             history.pushState(null, '', '/'); // This clears the hash from URL
         }}
-        class="flex-none justify-center place-content-center  mx-2 md:mx-12"
+        class="flex-none justify-center place-content-center  mx-2 md:mx-12 animate-pulse"
     >
         <img src="./logo.png" alt="" class="w-24" />
     </a>
@@ -236,6 +236,7 @@ on:click={() => (open = '')}
             class="hover:bg-primary-300 py-2 md:py-0  rounded-2xl md:rounded-none hover:px-6 px-3 text-primary-500 font-heading place-content-center h-full border-primary-300 md:border-l-2 md:border-r duration-300 ease-in-out"
             class:border-b-2={open === 'open'}
             class:bg-primary-300={active === 'team'}
+            class:px-6={active === 'team'}
         >
             Our Team
         </a>
@@ -245,6 +246,7 @@ on:click={() => (open = '')}
             class=" px-3 text-primary-500 hover:bg-primary-300 py-2 md:py-0  rounded-2xl md:rounded-none hover:px-6 font-heading place-content-center h-full border-primary-300 md:border-l md:border-r duration-300 ease-in-out"
             class:border-b-2={open === 'open'}
             class:bg-primary-300={active === 'projects'}
+            class:px-6={active === 'projects'}
       
         >
             Projects
@@ -255,7 +257,7 @@ on:click={() => (open = '')}
             class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0  rounded-2xl md:rounded-none hover:px-6 place-content-center h-full border-primary-300 md:border-l md:border-r duration-300 ease-in-out"
             class:border-b-2={open === 'open'}
             class:bg-primary-300={active === 'services'}
-         
+            class:px-6={active === 'services'}
         >
             Services
         </a>
@@ -265,6 +267,7 @@ on:click={() => (open = '')}
             class=" px-3 text-primary-500 font-heading place-content-center h-full hover:bg-primary-300 py-2 md:py-0  rounded-2xl md:rounded-none hover:px-6 border-primary-300 md:border-l md:border-r duration-300 ease-in-out"
             class:border-b-2={open === 'open'}
             class:bg-primary-300={active === 'vision'}
+            class:px-6={active === 'vision'}
          
         
         >
@@ -275,7 +278,8 @@ on:click={() => (open = '')}
             on:click={() => (active = 'about')}
             class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0  rounded-2xl md:rounded-none hover:px-6 place-content-center h-full border-primary-300 md:border-l border-r-2 duration-300 ease-in-out"
             class:border-b-2={open === 'open'}
-            class:bg-primary-300={active === 'about'}
+            class:bg-primary-300={active === 'about'}  
+            class:px-6={active === 'about'}
           
         >
             About Us
@@ -286,6 +290,7 @@ on:click={() => (open = '')}
             class=" ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-300 py-2 md:py-0  rounded-2xl md:rounded-none hover:px-6 h-full border-primary-300 md:border-l-2 border-r-2 duration-300 ease-in-out"
             class:border-b-2={open === 'open'}
             class:bg-primary-300={active === 'contact'}
+            class:px-6={active === 'contact'}
          
         >
             contact

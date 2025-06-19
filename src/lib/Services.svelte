@@ -86,7 +86,7 @@
                       </div>
                       <button
                           on:click={() => toggleService(index)}
-                          class="text-primary-300 hover:text-primary-900 p-1 sm:p-2 transition-transform duration-300 {expandedService ===
+                          class="text-primary-300 cursor-pointer hover:text-primary-900 p-1 sm:p-2 transition-transform duration-300 {expandedService ===
                           index
                               ? 'rotate-180'
                               : ''}"

@@ -86,12 +86,12 @@ const autoSlide = setInterval(() => {
     <!-- Arrows -->
     <button
         on:click={prevSlide}
-        class="absolute left-4 hidden sm:block top-1/2 -translate-y-1/2 z-20 bg-black/40 text-white px-4 py-2 text-2xl rounded-full hover:bg-black/70"
+        class="absolute left-4 cursor-pointer hidden sm:block top-1/2 -translate-y-1/2 z-20 bg-black/40 text-white px-4 py-2 text-2xl rounded-full hover:bg-black/70"
         >‹</button
     >
     <button
         on:click={nextSlide}
-        class="absolute right-4 hidden sm:block top-1/2 -translate-y-1/2 z-20 bg-black/40 text-white px-4 py-2 text-2xl rounded-full hover:bg-black/70"
+        class="absolute right-4 hidden cursor-pointer sm:block top-1/2 -translate-y-1/2 z-20 bg-black/40 text-white px-4 py-2 text-2xl rounded-full hover:bg-black/70"
         >›</button
     >
 </div>

@@ -78,7 +78,7 @@ let currentTeamIndex = 0;
             <!-- svelte-ignore a11y_consider_explicit_label -->
             <button
                 on:click={prevTeamMember}
-                class="absolute left-0 top-1/2 -translate-y-1/2 bg-primary-500 text-primary-300 p-2 rounded-full transition z-10"
+                class="absolute left-0 top-1/2 cursor-pointer -translate-y-1/2 bg-primary-500 text-primary-300 p-2 rounded-full transition z-10"
             >
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     ><path
@@ -92,7 +92,7 @@ let currentTeamIndex = 0;
             <!-- svelte-ignore a11y_consider_explicit_label -->
             <button
                 on:click={nextTeamMember}
-                class="absolute right-0 top-1/2 -translate-y-1/2 bg-primary-500 text-primary-300 p-2 rounded-full hover:bg-darkBlue transition z-10"
+                class="absolute right-0 cursor-pointer top-1/2 -translate-y-1/2 bg-primary-500 text-primary-300 p-2 rounded-full hover:bg-darkBlue transition z-10"
             >
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     ><path
