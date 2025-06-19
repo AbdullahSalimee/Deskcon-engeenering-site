@@ -14,7 +14,7 @@
     /* === COLORS === */
     
     --color-primary-900: #02010A;
-    --color-primary-700: #04052E;
+    --color-primary-700: #28536B;
     --color-primary-500: #F5F5F5;
     --color-primary-300: #1D84B5;
    
@@ -97,3 +97,72 @@
   html {
     scroll-behavior: smooth;
   }
+
+
+
+    /* Enhanced animations */
+    @keyframes slide-in-right {
+      from {
+        transform: translateX(100%) scale(1.05);
+        filter: blur(4px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0) scale(1);
+        filter: blur(0);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slide-in-left {
+      from {
+        transform: translateX(-100%) scale(1.05);
+        filter: blur(4px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0) scale(1);
+        filter: blur(0);
+        opacity: 1;
+      }
+    }
+  
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes text-shimmer {
+      from {
+        background-position: 200% center;
+      }
+      to {
+        background-position: -200% center;
+      }
+    }
+  
+    .slide-left {
+      animation: slide-in-left 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    
+    .slide-right {
+      animation: slide-in-right 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+  
+    .animate-fade-in {
+      animation: fade-in 1.2s ease-out both;
+    }
+  
+    .animate-text-shimmer {
+      animation: text-shimmer 8s linear infinite;
+    }
+  
+    html {
+      scroll-behavior: smooth;
+    }
