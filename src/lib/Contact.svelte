@@ -109,7 +109,7 @@
 				</button>
 			</div>
 
-			<div class="rounded-lg overflow-hidden shadow-xl">
+			<div class="rounded-lg overflow-hidden shadow-xl animate-pulse saturate-200">
 				<img
 					src="front2.png"
 					alt="Techline Engineering Office"
