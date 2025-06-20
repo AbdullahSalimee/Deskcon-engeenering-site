@@ -28,7 +28,7 @@
 			<div class="grid md:grid-cols-2 gap-10">
 				<!-- Vision Card -->
 				<div
-					class="bg-primary-800/50 backdrop-blur-sm rounded-3xl p-10 border border-primary-700 hover:border-primary-500 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10"
+					class="bg-primary-800/50 backdrop-blur-sm rounded-3xl sm:p-10 p-2 border border-primary-700 hover:border-primary-500 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10"
 				>
 					<div class="flex items-center mb-6">
 						<div class="bg-primary-500 p-3 rounded-lg mr-4">
@@ -69,7 +69,7 @@
 
 				<!-- Mission Card -->
 				<div
-					class="bg-primary-800/50 backdrop-blur-sm rounded-3xl p-10 border border-primary-700 hover:border-primary-500 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10"
+					class="bg-primary-800/50 backdrop-blur-sm rounded-3xl sm:p-10 p-2 border border-primary-700 hover:border-primary-500 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/10"
 				>
 					<div class="flex items-center mb-6">
 						<div class="bg-primary-500 p-3 rounded-lg mr-4">
