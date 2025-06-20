@@ -1,10 +1,5 @@
 <script>
-
-	
-
 	import { slide } from 'svelte/transition';
-
-		
 
 	/**
 	 * @type {number | null}
@@ -43,67 +38,73 @@
 		expandedService = expandedService === index ? null : index;
 	}
 </script>
+
 <section id="services" class="bg-primary-700 py-8 md:py-24 px-4 sm:px-6">
-  <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-8 md:mb-12">
-          <h2 class="text-2xl sm:text-3xl font-bold text-primary-500 mb-2">Our Services</h2>
-          <div class="w-24 sm:w-32 h-1 bg-primary-900 mx-auto"></div>
-      </div>
+	<div class="max-w-4xl mx-auto">
+		<div class="text-center mb-8 md:mb-12">
+			<h2 class="text-2xl sm:text-3xl font-bold text-primary-500 mb-2">Our Services</h2>
+			<div class="w-24 sm:w-32 h-1 bg-primary-900 mx-auto"></div>
+		</div>
 
-      <div class="space-y-4 sm:space-y-6">
-          {#each services as service, index}
-              <div
-                  class="bg-primary-500 rounded-lg p-4 sm:p-6 border-2 shadow-lg sm:shadow-xl font-heading shadow-primary-900 transition-all duration-300 hover:shadow-xl sm:hover:shadow-2xl hover:shadow-primary-900/50"
-              >
-                  <div class="flex items-start gap-3 sm:gap-4">
-                      <div class="bg-primary-500 my-auto p-2 sm:p-3 rounded-full border-2 border-primary-900">
-                          <svg
-                              class="w-5 h-5 sm:w-6 sm:h-6 text-primary-900"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                          >
-                              <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="1.5"
-                                  d={service.icon}
-                              ></path>
-                          </svg>
-                      </div>
-                      <div class="flex-1">
-                          <h3 class="text-xl sm:text-2xl font-light text-primary-100 mb-1">{service.title}</h3>
-                          <p class="text-sm sm:text-base text-primary-700">{service.description}</p>
+		<div class="space-y-4 sm:space-y-6">
+			{#each services as service, index}
+				<div
+					class="bg-primary-500 rounded-lg p-4 sm:p-6 border-2 shadow-lg sm:shadow-xl font-heading shadow-primary-900 transition-all duration-300 hover:shadow-xl sm:hover:shadow-2xl hover:shadow-primary-900/50"
+				>
+					<div class="flex items-start gap-3 sm:gap-4">
+						<div class="bg-primary-500 my-auto p-2 sm:p-3 rounded-full border-2 border-primary-900">
+							<svg
+								class="w-5 h-5 sm:w-6 sm:h-6 text-primary-900"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="1.5"
+									d={service.icon}
+								></path>
+							</svg>
+						</div>
+						<div class="flex-1">
+							<h3 class="text-xl sm:text-2xl font-light text-primary-100 mb-1">{service.title}</h3>
+							<p class="text-sm sm:text-base text-primary-700">{service.description}</p>
 
-                          {#if expandedService === index}
-                              <div
-                                  transition:slide|local
-                                  class="mt-3 sm:mt-4 p-3 sm:p-4 bg-primary-300 text-primary-900 rounded-lg border border-primary-900/20 text-sm sm:text-base"
-                              >
-                                  <p>{service.details}</p>
-                              </div>
-                          {/if}
-                      </div>
-                      <button
-                          on:click={() => toggleService(index)}
-                          class="text-primary-300 cursor-pointer hover:text-primary-900 p-1 sm:p-2 transition-transform duration-300 {expandedService ===
-                          index
-                              ? 'rotate-180'
-                              : ''}"
-                          aria-label={expandedService === index ? 'Collapse details' : 'Expand details'}
-                      >
-                          <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="2"
-                                  d="M19 9l-7 7-7-7"
-                              ></path>
-                          </svg>
-                      </button>
-                  </div>
-              </div>
-          {/each}
-      </div>
-  </div>
+							{#if expandedService === index}
+								<div
+									transition:slide|local
+									class="mt-3 sm:mt-4 p-3 sm:p-4 bg-primary-300 text-primary-900 rounded-lg border border-primary-900/20 text-sm sm:text-base"
+								>
+									<p>{service.details}</p>
+								</div>
+							{/if}
+						</div>
+						<button
+							on:click={() => toggleService(index)}
+							class="text-primary-300 cursor-pointer hover:text-primary-900 p-1 sm:p-2 transition-transform duration-300 {expandedService ===
+							index
+								? 'rotate-180'
+								: ''}"
+							aria-label={expandedService === index ? 'Collapse details' : 'Expand details'}
+						>
+							<svg
+								class="w-4 h-4 sm:w-5 sm:h-5"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M19 9l-7 7-7-7"
+								></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
 </section>
