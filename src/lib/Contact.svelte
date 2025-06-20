@@ -1,10 +1,8 @@
 <script>
-	// Function to handle phone call
 	const makeCall = () => {
 	  window.location.href = 'tel:+923004885588';
 	};
   
-	// Function to open location in maps
 	const openMaps = () => {
 	  const address = encodeURIComponent('Garden View Colony, Near Chugtai Lab, Chauk Steel Bagh, Kasur, Pakistan');
 	  window.open(`https://www.google.com/maps/search/?api=1&query=${address}`, '_blank');
@@ -13,7 +11,6 @@
   
   <section id="contact" class="relative py-28 px-4 overflow-hidden">
 	<div class="mx-auto relative z-10 max-w-6xl">
-	  <!-- Section header -->
 	  <div class="relative mb-20 pl-6 md:pl-12">
 		<h2 class="text-5xl font-bold text-white">
 		  <span class="text-primary-500">Contact</span> Us
@@ -22,18 +19,13 @@
 	  </div>
   
 	  <div class="grid md:grid-cols-2 gap-16 items-start">
-		<!-- Left Column - Contact Info -->
-		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div class="space-y-8 text-primary-300 prose prose-lg max-w-none my-auto">
-		  <!-- Phone - Now clickable -->
-		  <!-- svelte-ignore a11y_click_events_have_key_events -->
 		  <div class="flex items-start gap-4 group cursor-pointer" on:click={makeCall}>
 			<svg
 			  class="w-6 h-6 text-primary-500 flex-shrink-0 mt-1 group-hover:text-white transition-colors"
 			  fill="none"
 			  stroke="currentColor"
 			  viewBox="0 0 24 24"
-			  xmlns="http://www.w3.org/2000/svg"
 			>
 			  <path
 				stroke-linecap="round"
@@ -48,14 +40,12 @@
 			</div>
 		  </div>
   
-		  <!-- Email -->
 		  <div class="flex items-start gap-4">
 			<svg
 			  class="w-6 h-6 text-primary-500 flex-shrink-0 mt-1"
 			  fill="none"
 			  stroke="currentColor"
 			  viewBox="0 0 24 24"
-			  xmlns="http://www.w3.org/2000/svg"
 			>
 			  <path
 				stroke-linecap="round"
@@ -70,16 +60,12 @@
 			</div>
 		  </div>
   
-		  <!-- Address - Now clickable -->
-		  <!-- svelte-ignore a11y_click_events_have_key_events -->
-		  <!-- svelte-ignore a11y_no_static_element_interactions -->
 		  <div class="flex items-start gap-4 group cursor-pointer" on:click={openMaps}>
 			<svg
 			  class="w-6 h-6 text-primary-500 flex-shrink-0 mt-1 group-hover:text-white transition-colors"
 			  fill="none"
 			  stroke="currentColor"
 			  viewBox="0 0 24 24"
-			  xmlns="http://www.w3.org/2000/svg"
 			>
 			  <path
 				stroke-linecap="round"
@@ -96,7 +82,6 @@
 			</div>
 		  </div>
   
-		  <!-- Call to Action Button -->
 		  <button
 			on:click={makeCall}
 			class="mt-8 px-8 py-3 bg-primary-300 text-primary-900 font-semibold rounded-full hover:bg-primary-200 transition duration-300 inline-flex items-center"
@@ -108,8 +93,6 @@
 			  fill="none" 
 			  stroke="currentColor" 
 			  viewBox="0 0 24 24" 
-			  xmlns="http://www.w3.org/2000/svg"
-			  aria-hidden="true"
 			>
 			  <path 
 				stroke-linecap="round" 
@@ -121,7 +104,6 @@
 		  </button>
 		</div>
   
-		<!-- Right Column - Contact Card -->
 		<div class="rounded-lg overflow-hidden shadow-xl">
 		  <img 
 			src="front2.png" 
