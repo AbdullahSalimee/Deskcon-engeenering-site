@@ -20,7 +20,11 @@
   
 	  <div class="grid md:grid-cols-2 gap-16 items-start">
 		<div class="space-y-8 text-primary-300 prose prose-lg max-w-none my-auto">
-		  <div class="flex items-start gap-4 group cursor-pointer" on:click={makeCall}>
+		 
+			
+		  <!-- svelte-ignore a11y_click_events_have_key_events -->
+		  <!-- svelte-ignore a11y_no_static_element_interactions -->
+			<div class="flex items-start gap-4 group cursor-pointer" on:click={makeCall}>
 			<svg
 			  class="w-6 h-6 text-primary-500 flex-shrink-0 mt-1 group-hover:text-white transition-colors"
 			  fill="none"
@@ -60,6 +64,8 @@
 			</div>
 		  </div>
   
+		  <!-- svelte-ignore a11y_click_events_have_key_events -->
+		  <!-- svelte-ignore a11y_no_static_element_interactions -->
 		  <div class="flex items-start gap-4 group cursor-pointer" on:click={openMaps}>
 			<svg
 			  class="w-6 h-6 text-primary-500 flex-shrink-0 mt-1 group-hover:text-white transition-colors"
