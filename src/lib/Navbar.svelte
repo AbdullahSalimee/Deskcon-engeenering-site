@@ -169,7 +169,7 @@
 			<a
 				href="#projects"
 				on:click={() => (active = 'projects')}
-				class=" px-3 text-primary-500 hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 font-heading place-content-center h-full border-primary-300 md:border-l md:border-r duration-300 ease-in-out"
+				class=" px-3 text-primary-500 hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 font-heading place-content-center h-full  duration-300 ease-in-out"
 				class:border-b-2={active === 'projects'}
 			>
 				Projects
@@ -177,7 +177,7 @@
 			<a
 				href="#services"
 				on:click={() => (active = 'services')}
-				class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full border-primary-300 md:border-l md:border-r duration-300 ease-in-out"
+				class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full  duration-300 ease-in-out"
 				class:border-b-2={active === 'services'}
 			>
 				Services
@@ -185,7 +185,7 @@
 			<a
 				href="#vision"
 				on:click={() => (active = 'vision')}
-				class=" px-3 text-primary-500 font-heading place-content-center h-full hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 border-primary-300 md:border-l md:border-r duration-300 ease-in-out"
+				class=" px-3 text-primary-500 font-heading place-content-center h-full hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6  duration-300 ease-in-out"
 				class:border-b-2={active === 'vision'}
 			>
 				V & M
@@ -193,7 +193,7 @@
 			<a
 				href="#about"
 				on:click={() => (active = 'about')}
-				class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full border-primary-300 md:border-l md:border-r-2 duration-300 ease-in-out"
+				class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full  duration-300 ease-in-out"
 				class:border-b-2={active === 'about'}
 			>
 				About Us
@@ -201,7 +201,7 @@
 			<a
 				href="#contact"
 				on:click={() => (active = 'contact')}
-				class=" md:ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 h-full border-primary-300 md:border-l-2 md:border-r-2 duration-300 ease-in-out"
+				class=" md:ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 h-full  duration-300 ease-in-out"
 				class:border-b-2={active === 'contact'}
 			>
 				contact
@@ -213,7 +213,7 @@
 		<a
 			href="#team"
 			on:click={() => (active = 'team')}
-			class="hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 px-3 text-primary-500 font-heading place-content-center h-full border-primary-300 md:border-l-2 md:border-r duration-300 ease-in-out"
+			class="hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 px-3 text-primary-500 font-heading place-content-center h-full duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-300={active === 'team'}
 			class:px-6={active === 'team'}
@@ -223,7 +223,7 @@
 		<a
 			href="#projects"
 			on:click={() => (active = 'projects')}
-			class=" px-3 text-primary-500 hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 font-heading place-content-center h-full border-primary-300 md:border-l md:border-r duration-300 ease-in-out"
+			class=" px-3 text-primary-500 hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 font-heading place-content-center h-full  duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-300={active === 'projects'}
 			class:px-6={active === 'projects'}
@@ -233,7 +233,7 @@
 		<a
 			href="#services"
 			on:click={() => (active = 'services')}
-			class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full border-primary-300 md:border-l md:border-r duration-300 ease-in-out"
+			class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full  duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-300={active === 'services'}
 			class:px-6={active === 'services'}
@@ -243,7 +243,7 @@
 		<a
 			href="#vision"
 			on:click={() => (active = 'vision')}
-			class=" px-3 text-primary-500 font-heading place-content-center h-full hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 border-primary-300 md:border-l md:border-r duration-300 ease-in-out"
+			class=" px-3 text-primary-500 font-heading place-content-center h-full hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6  duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-300={active === 'vision'}
 			class:px-6={active === 'vision'}
@@ -253,7 +253,7 @@
 		<a
 			href="#about"
 			on:click={() => (active = 'about')}
-			class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full border-primary-300 md:border-l border-r-2 duration-300 ease-in-out"
+			class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full  duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-300={active === 'about'}
 			class:px-6={active === 'about'}
@@ -263,7 +263,7 @@
 		<a
 			href="#contact"
 			on:click={() => (active = 'contact')}
-			class=" ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-900 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 h-full border-primary-900 md:border-l-2 border-r-2 duration-300 ease-in-out"
+			class=" ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-900 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 h-full border-primary-900  duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-900={active === 'contact'}
 			class:px-6={active === 'contact'}
