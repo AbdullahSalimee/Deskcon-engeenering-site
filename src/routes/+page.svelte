@@ -1,6 +1,5 @@
 <script>
-		
-  import Navbar from '$lib/Navbar.svelte';
+	import Navbar from '$lib/Navbar.svelte';
 	import Home from '$lib/Home.svelte';
 	import Info from '$lib/Info.svelte';
 	import Work from '$lib/Work.svelte';
