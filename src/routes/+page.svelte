@@ -12,7 +12,7 @@
 	import Contact from '$lib/Contact.svelte';
 </script>
 
-<title>Descon</title>
+<title>Techline</title>
 <div class="w-full h-full bg-primary-900">
 	<Navbar />
 	<Home />
