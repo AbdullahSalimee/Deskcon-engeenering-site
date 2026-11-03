@@ -120,9 +120,14 @@
 			window.scrollTo({ top: 0, behavior: 'smooth' });
 			history.pushState(null, '', '/');
 		}}
-		class="flex-none justify-center place-content-center mx-2 md:mx-12 animate-pulse"
+		class="flex flex-none items-center justify-center mx-2 md:mx-12 animate-pulse"
 	>
-		<img src="./logo.png" alt="" class="w-24" />
+		<img
+			src="/techline-mobile.svg"
+			alt="Techline Engineering"
+			class="block w-40 md:hidden h-auto max-w-full"
+		/>
+		<img src="/logo.png" alt="" class="hidden md:block w-24 h-auto" />
 	</a>
 
 	<!-- svelte-ignore a11y_consider_explicit_label -->
@@ -169,7 +174,7 @@
 			<a
 				href="#projects"
 				on:click={() => (active = 'projects')}
-				class=" px-3 text-primary-500 hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 font-heading place-content-center h-full  duration-300 ease-in-out"
+				class=" px-3 text-primary-500 hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 font-heading place-content-center h-full duration-300 ease-in-out"
 				class:border-b-2={active === 'projects'}
 			>
 				Projects
@@ -177,7 +182,7 @@
 			<a
 				href="#services"
 				on:click={() => (active = 'services')}
-				class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full  duration-300 ease-in-out"
+				class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full duration-300 ease-in-out"
 				class:border-b-2={active === 'services'}
 			>
 				Services
@@ -185,7 +190,7 @@
 			<a
 				href="#vision"
 				on:click={() => (active = 'vision')}
-				class=" px-3 text-primary-500 font-heading place-content-center h-full hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6  duration-300 ease-in-out"
+				class=" px-3 text-primary-500 font-heading place-content-center h-full hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 duration-300 ease-in-out"
 				class:border-b-2={active === 'vision'}
 			>
 				V & M
@@ -193,7 +198,7 @@
 			<a
 				href="#about"
 				on:click={() => (active = 'about')}
-				class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full  duration-300 ease-in-out"
+				class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full duration-300 ease-in-out"
 				class:border-b-2={active === 'about'}
 			>
 				About Us
@@ -201,7 +206,7 @@
 			<a
 				href="#contact"
 				on:click={() => (active = 'contact')}
-				class=" md:ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 h-full  duration-300 ease-in-out"
+				class=" md:ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 h-full duration-300 ease-in-out"
 				class:border-b-2={active === 'contact'}
 			>
 				contact
@@ -223,7 +228,7 @@
 		<a
 			href="#projects"
 			on:click={() => (active = 'projects')}
-			class=" px-3 text-primary-500 hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 font-heading place-content-center h-full  duration-300 ease-in-out"
+			class=" px-3 text-primary-500 hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 font-heading place-content-center h-full duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-300={active === 'projects'}
 			class:px-6={active === 'projects'}
@@ -233,7 +238,7 @@
 		<a
 			href="#services"
 			on:click={() => (active = 'services')}
-			class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full  duration-300 ease-in-out"
+			class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-300={active === 'services'}
 			class:px-6={active === 'services'}
@@ -243,7 +248,7 @@
 		<a
 			href="#vision"
 			on:click={() => (active = 'vision')}
-			class=" px-3 text-primary-500 font-heading place-content-center h-full hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6  duration-300 ease-in-out"
+			class=" px-3 text-primary-500 font-heading place-content-center h-full hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-300={active === 'vision'}
 			class:px-6={active === 'vision'}
@@ -253,7 +258,7 @@
 		<a
 			href="#about"
 			on:click={() => (active = 'about')}
-			class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full  duration-300 ease-in-out"
+			class=" px-3 text-primary-500 font-heading hover:bg-primary-300 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 place-content-center h-full duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-300={active === 'about'}
 			class:px-6={active === 'about'}
@@ -263,7 +268,7 @@
 		<a
 			href="#contact"
 			on:click={() => (active = 'contact')}
-			class=" ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-900 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 h-full border-primary-900  duration-300 ease-in-out"
+			class=" ml-auto px-3 text-primary-500 font-heading place-content-center hover:bg-primary-900 py-2 md:py-0 rounded-2xl md:rounded-none hover:px-6 h-full border-primary-900 duration-300 ease-in-out"
 			class:border-b-2={open === 'open'}
 			class:bg-primary-900={active === 'contact'}
 			class:px-6={active === 'contact'}

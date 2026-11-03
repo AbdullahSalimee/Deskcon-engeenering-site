@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56">
+	<rect width="200" height="56" rx="4" fill="#080b12" />
+	<path d="M8 7h42v8H33v28h-8V15H8z" fill="#f20d16" />
+	<path d="M8 25h8v12h9v6H8zm42 0h-8v12h-9v6h17z" fill="#0755e8" />
+	<text x="62" y="36" fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700">TECHLINE</text>
+</svg>
